@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+</head>
+<body>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box::first-line{
+           color: red;
+        } */
+         
+        /* More about universal selector  */
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+
+        /* Attribute Selector */
+        /* p , .box ,[data-color="primary"]{
+            /* margin-top: 45px; */
+            /* padding-top: 45px; */
+        
+                    /* n child sudeo selector */
+        /* .box:nth-child(even){
+            background-color: blue;
+        } 
+        .box:nth-child(odd){
+            background-color: blue;
+        }  */
+        /* .box:nth-last-child(1){
+        background-color: red;
+        } */
+           
+        /* dynamically elements insert */
+        .boxes::before{
+            content: "Hussain is Good. ";
+            color: blue;
+        }
+
+        .boxes::after{
+            content: "Sigma courses also Good. ";
+            color: red;
+        }
+
+        ::selection{
+            color: red;
+            background-color: aqua;
+        }
+
+        .box::first-letter{
+            color: rgb(71, 151, 255);
+            font-size: 45px;
+        }
+
+        input::placeholder{
+            color: blue;
+            
+        }
+
+    </style>
+</body>
+<div class="boxes">
+    <div data-color="primary">I am the First Box</div>
+    <div class="box">I am a box</div>
+    <div class="box">I am a box</div>
+    <input type="text" placeholder="Type your Name here">
+</div>
+</html>

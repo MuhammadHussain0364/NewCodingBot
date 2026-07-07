@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fit and Object cover property</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 120px;
+            width: 150px;
+            background-color: azure;
+        }
+
+        img{
+           height: 120px;
+            width: 150px;
+
+            /* object-fit: cover; */
+            object-fit:contain;
+            /* object-fit: fill; */
+            
+
+            /* object-position: top right; */
+            object-position: 10px 15px;
+            /* object-position: bottom; */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN3rQlthssayJwZGNSaoMg9bQ6uY1ZPsUai-_8-p01dIBIeB5Oe4pdy3jAarQgHUMzZIo&usqp=CAU" alt="">
+    </div>
+</body>
+</html>

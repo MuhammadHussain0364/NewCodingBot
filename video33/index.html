@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          
+          /* GLOBAL VARIABLE */
+        :root{
+            --color: rgb(68, 128, 0);
+            --seccolor: purple;
+            --defof: 0.2;
+            --defpad: 32px;
+
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            background-color: var(--color);
+            /* margin: 2px; */
+            border: 3px solid black;
+            
+        }
+
+        ul{
+            display: flex;
+            
+        }
+
+        ul li{
+             opacity: var(--defof);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+            
+        }
+
+        /* LOCAL VARIABLE */
+        ul li:first-child{
+            color: blueviolet;
+            background-color: yellow ;
+        }
+
+        .para{
+            background-color: var(--seccolor);
+            font-size: larger;
+            border: 3px solid black;
+            /* margin: 2px; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>about</li>
+            <li>Home</li>
+            <li>Contact</li>
+        </ul>
+    </div >
+    <div class="para">
+    <h1>My Paragrah</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, aut. Officia optio praesentium commodi excepturi, voluptatum atque voluptates beatae sapiente enim iure cumque, nostrum fuga ut alias placeat vel asperiores expedita! Beatae sed voluptatum nihil voluptatem ullam praesentium placeat iste doloribus, at accusantium harum consequuntur!</p>
+    </div>
+</body>
+</html>
+

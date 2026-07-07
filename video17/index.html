@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Element selector -->
+    <style>
+        div{
+            background-color: red;
+        }
+        
+        /* Class selector */
+        .red{
+            background-color: orange;
+        }
+          
+        /* Id selector */
+        #green{
+            background-color: aqua;
+        }
+
+        /* Child selector */
+        div > p{
+           color: brown;
+            background-color: blue;
+        }
+
+        /* Desendant selector */
+       div > p{
+           color: brown;
+            background-color: blue;
+        }
+        
+        /* Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+        /* Jo website visit ho gai ho */
+        a:visited{
+            color:cornflowerblue;
+        }
+
+        /* Jo link abhi visit na hoa ho */
+        a:link{
+            color:green;
+        }
+
+         /* Jab click kr rahe hon to background red ho jae */
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: yellow;
+        }
+
+        p:first-child{
+            background-color: brown;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        My name is M.Hussain
+    </div>
+
+    <div class="red">
+        hey how are u
+    </div>
+
+    <div id="green">
+        i hope u are a fine.
+    </div>
+
+    <div>
+        <p>i am para inside a div </p>
+    </div>
+
+    <div>
+         <article>
+            para inside article
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+     <a href="https://www.facebook2.com">Go to Facebook</a>
+
+     <main class="one">
+        <p>It is one</p>
+        <p>It is second</p>
+     </main>
+
+</body>
+</html>

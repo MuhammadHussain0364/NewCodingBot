@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: aqua;
+            height: 50vh;
+            width: 81vw;
+            position: relative;
+        }
+
+        .box {
+            background-color: red;
+            height: 40px;
+            width: 40px;
+            border-radius: 70px;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation: hussain1 1s ease 2s infinite;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: hussain1 4s linear infinite, 
+                       hussain2 1s ease-out infinite alternate;
+
+        }
+
+        @keyframes hussain1 {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+
+            }
+
+        }
+
+        @keyframes hussain2 {
+
+            fron {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

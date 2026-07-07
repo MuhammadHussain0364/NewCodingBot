@@ -1,0 +1,106 @@
+
+          <!-- Solution Eercise 5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Layout</title>
+    <style>
+        body{
+            background-color: rgb(102, 50, 50);
+        }
+
+        *{
+            margin: 0;
+        }
+
+        .header{
+            height: 40px;
+            padding: 2px;
+            position: sticky;   
+            top: 0;         
+            background-color: aqua;    
+        }
+
+        .box{
+            border: 2px solid rgb(134, 57, 57);
+            margin: 40px;
+            height: 500px;
+            background-color: rgb(21, 168, 16);
+            display: flex;
+
+            
+        }
+        
+        .box1{
+            border: 2px solid rgba(0, 0, 0, 308);
+            background-color: aqua;
+            width: 700px;
+            margin: 60px;
+        }
+
+        .box2{
+           background-color: rgb(16, 16, 97);
+        }
+
+         .div1{
+            border: 2px solid black;
+            margin: 40px;
+            height: 120px; 
+            border-radius: 7px;
+            align-items:center;
+            justify-content: center;
+            font-size: 50px;
+            color: blueviolet; 
+            border-color: blue;
+            background-color: blanchedalmond; 
+            
+        } 
+
+        .logo {
+            margin: 11px;
+            display: flex;
+            justify-content:flex-end;
+            /* overflow: auto; */
+        }
+        img {
+            position: fixed;
+            bottom: 0;
+            /* float: right; */
+        }
+
+          footer {
+            background-color: rgb(235, 216, 216);
+            padding: 5px;
+            height: 45px;
+            text-align: center;
+            color: rgb(17, 16, 16);
+            font-weight: bold;
+            font-size: larger;
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="header"></div>
+     
+    <div class="box">
+        <div class="box1 "></div>
+        <div class="box1 box2"></div>
+    </div>
+
+    <div class="div1">
+        Welcome to this Sigma Web Development Express
+    </div>
+    
+
+    <div class="logo">
+        <img src="img.png" alt="" height="70px">
+    </div>
+
+    <footer>This is the footer</footer>
+   
+
+</body>
+</html>
